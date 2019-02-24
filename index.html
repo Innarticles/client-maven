@@ -79,8 +79,8 @@
     }
 
     .Line {
-      height: 2px;
-      border: solid 0.8px #c0c0c0;
+      height: 1px;
+      /* border: solid 0.8px #c0c0c0; */
       background:  #c0c0c0;
     }
 
@@ -106,6 +106,12 @@
       color: #4a4a4a;
     }
 
+    .mt-20{
+      margin-top: 50px;
+    }
+    .mt-10{
+      margin-top: 25px;
+    }
     .Chip {
       height: 338px;
       object-fit: contain;
@@ -120,7 +126,7 @@
 
     .what-heading {
       font-family: DINAlternate;
-      font-size: 24px;
+      font-size: 1.41rem;
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;
@@ -131,7 +137,7 @@
 
     .what-text {
       font-family: DIN;
-      font-size: 20px;
+      font-size: 1.17rem;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -139,7 +145,50 @@
       letter-spacing: -0.1px;
       color: #ffffff;
     }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 78%;
+      color: white;
+      transform: translate(-50%, -50%);
+    }
 
+    .case-p {
+      font-family: DIN;
+      font-size: 1.17rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.25;
+      letter-spacing: normal;
+    }
+
+    .case-h3 {
+      font-family: DIN;
+      font-size: 1.47rem;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -0.1px;
+      color: #d8d8d8;
+    }
+   
+   
+
+
+    .As-Google-Cloud-Part {
+      font-family: DIN;
+      font-size: 1.8rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.24;
+      letter-spacing: -0.1px;
+      text-align: center;
+      color: #4a4a4a;
+    }
     .learn-more {
       font-family: DINAlternate;
       font-size: 17px;
@@ -154,10 +203,27 @@
     header.masthead {
     text-align: left;}
 
+
+
     /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
         @media screen and (min-width: 601px) {
           .We-build-scalable-da  {
         font-size: 40px;
+      }
+
+      .google-padding{
+        padding: 0px 182px;
+      }
+      .bg-light{
+        background: #f7f7f7; 
+        position: relative;     
+        margin-bottom: 270px;
+      }
+      .case-row-pos{
+        position: absolute;
+        bottom: -20%;
+        left: 9%;
+        right: 9%;
       }
     }
 
@@ -165,6 +231,9 @@
     @media screen and (max-width: 600px) {
       .We-build-scalable-da {
         font-size: 25px;
+      }
+      .bg-light{
+        background: #f7f7f7; 
       }
     }
   </style>
@@ -232,115 +301,175 @@
   </header>
 
 
-
-
   <!-- Clients -->
   <section class="py-5">
-    <div class="container h-100">
-      <div class="row  align-items-center h-100">
+      <div class="container h-100">
+        <div class="row  align-items-center h-100">
+            <div class="col-md-2 col-sm-6">
+                <a href="index.html#" class='Weve-Worked-With'>
+                    WE’VE WORKED WITH
+                </a>
+              </div>
           <div class="col-md-2 col-sm-6">
-              <a href="index.html#" class='Weve-Worked-With'>
-                  WE’VE WORKED WITH
-              </a>
-            </div>
-        <div class="col-md-2 col-sm-6">
-          <a href="index.html#">
-            <img class="img-fluid d-block mx-auto client-item" src="img/clients/Twitter.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-2 col-sm-6">
-          <a href="index.html#">
-            <img class="img-fluid d-block mx-auto client-item" src="img/clients/Ciena.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-2 col-sm-6">
-          <a href="index.html#">
-            <img class="img-fluid d-block mx-auto client-item" src="img/clients/Client.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-2 col-sm-6">
-          <a href="index.html#">
-            <img class="img-fluid d-block mx-auto client-item" src="img/clients/WIND.png" alt="">
-          </a>
-        </div>
-        <div class="col-md-2 col-sm-6">
             <a href="index.html#">
-              <img class="img-fluid d-block mx-auto client-item" src="img/clients/StarBucks.png" alt="">
+              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Twitter.png" alt="">
             </a>
           </div>
-          
-      </div>
-      <hr class="Line">
-    </div>
-  </section>
-
-<!-- Services -->
-<section id="services">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <h2 class="section-heading">ABOUT US</h2>
-        <h3 class="section-subheading">MavenCode is a provider of consulting services and expertise for building and implementing large scale distributed reactive backend systems for processing massive large scale datasets.</h3>
-      </div>
-      <div class="col-sm align-items-center h-100">
-          <div  class="h-100 justify-content-center text-center">
-            <!-- png -->
-
-            <img src="img/chip.png"
-                srcset="img/chip@2x.png 2x,
-                        img/chip@3x.png 3x"
-                class="Chip">
+          <div class="col-md-2 col-sm-6">
+            <a href="index.html#">
+              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Ciena.png" alt="">
+            </a>
           </div>
+          <div class="col-md-2 col-sm-6">
+            <a href="index.html#">
+              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Client.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+            <a href="index.html#">
+              <img class="img-fluid d-block mx-auto client-item" src="img/clients/WIND.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-2 col-sm-6">
+              <a href="index.html#">
+                <img class="img-fluid d-block mx-auto client-item" src="img/clients/StarBucks.png" alt="">
+              </a>
+            </div>
+            
         </div>
-    </div>
-  </div>
-</section>
-
-<!-- Portfolio Grid -->
-<section class="Rectangle" id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="section-heading white">WHAT WE DO</h2>
-        <h3 class="section-subheading white">Exclusive artificial intelligence and machine <br> learning related product & service offerings.
-
-          </h3>
+        <hr class="Line">
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-xs-6">
+    </section>
+
+  
+  <!-- Services -->
+  <section id="services">
+      <div class="container">
         <div class="row">
-            <div class="col-3">
-                <img src="img/what/algorithm.png" alt="" class="img-fluid">
+          <div class="col-sm">
+            <h2 class="section-heading">ABOUT US</h2>
+            <h3 class="section-subheading">MavenCode is a provider of consulting services and expertise for building and implementing large scale distributed reactive backend systems for processing massive large scale datasets.</h3>
+          </div>
+          <div class="col-sm align-items-center h-100">
+              <div  class="h-100 justify-content-center text-center">
+                <!-- png -->
+  
+                <img src="img/chip.png"
+                    class="Chip">
               </div>
-              <div class="col-9">
-                <h3 class="what-heading">
-                    Data Preparation, Feature Engineering, & Algorithm Implementation
-                </h3>
-                <p class="what-text">Data is the lifeblood that drives any successful AI & ML business strategy. </p>
-                <a href="" class="learn-more">LEARN MORE</a>
-              </div>
+            </div>
         </div>
       </div>
-      <div class="col-md-6 col-sm-6">
-          <div class="row">
-              <div class="col-3">
-                  <img src="img/what/algorithm.png" alt="" class="img-fluid">
-                </div>
-                <div class="col-9">
-                  <h3 class="what-heading">
-                      Data Preparation, Feature Engineering, & Algorithm Implementation
-                  </h3>
-                  <p class="what-text">Data is the lifeblood that drives any successful AI & ML business strategy. </p>
-                  <a href="" class="learn-more">LEARN MORE</a>
-                </div>
-          </div>
-          
-        </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+
+
+  <!-- Portfolio Grid -->
+  <section class="Rectangle" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-heading white">WHAT WE DO</h2>
+            <h3 class="section-subheading white">Exclusive artificial intelligence and machine <br> learning related product & service offerings.
+  
+              </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 mt-20">
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/what/algorithm.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-9">
+                    <h3 class="what-heading">
+                        Data Preparation, Feature Engineering, & Algorithm Implementation
+                    </h3>
+                    <p class="what-text">Data is the lifeblood that drives any successful AI & ML business strategy. </p>
+                    <a href="" class="learn-more">LEARN MORE</a>
+                  </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 mt-20"">
+              <div class="row">
+                  <div class="col-3">
+                      <img src="img/what/pipeline.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-9">
+                      <h3 class="what-heading">
+                          Data Pipelines
+                      </h3>
+                      <p class="what-text">Big Data Requires Big Infrastructure. At MavenCode, we build scalable AI & ML data pipelines for organizations.
+                        </p>
+                      <a href="" class="learn-more">LEARN MORE</a>
+                    </div>
+              </div>
+            
+          </div>
+          <div class="col-md-6 col-sm-6 mt-20"">
+              <div class="row">
+                  <div class="col-3">
+                      <img src="img/what/folder.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-9">
+                      <h3 class="what-heading">
+                          Dev Ops & Cloud Migration Strategy
+                      </h3>
+                      <p class="what-text">Let MavenCode help you make your organization’s move to the Cloud a reality. </p>
+                      <a href="" class="learn-more">LEARN MORE</a>
+                    </div>
+              </div>
+            
+          </div>
+          <div class="col-md-6 col-sm-6 mt-20"">
+              <div class="row">
+                  <div class="col-3">
+                      <img src="img/what/project-management.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-9">
+                      <h3 class="what-heading">
+                          Consulting Services (Kubeflow, Kubernetes + Managed Cloud Orchestration)
+                      </h3>
+                      <p class="what-text">Let our experts guide you through the complicated and quickly changing</p>
+                      <a href="" class="learn-more">LEARN MORE</a>
+                    </div>
+              </div>
+            
+          </div>
+          <div class="col-md-6 col-sm-6 mt-20"">
+              <div class="row">
+                  <div class="col-3">
+                      <img src="img/what/analysis.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-9">
+                      <h3 class="what-heading">
+                          Data Visualization
+                      </h3>
+                      <p class="what-text">Data Visualization is key component of any successful data acquisition, analysis, and monetization strategy.</p>
+                      <a href="" class="learn-more">LEARN MORE</a>
+                    </div>
+              </div>
+            
+          </div>
+          <div class="col-md-6 col-sm-6 mt-20"">
+              <div class="row">
+                  <div class="col-3">
+                      <img src="img/what/presentation.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-9">
+                      <h3 class="what-heading">
+                          Training
+                      </h3>
+                      <p class="what-text">We are passionate about AI & ML and want to share our knowledge.  </p>
+                      <a href="" class="learn-more">LEARN MORE</a>
+                    </div>
+              </div>
+            
+          </div>
+        
+        </div>
+      </div>
+    </section>
 
 
 
@@ -349,12 +478,14 @@
   <!-- Services -->
   <section id="services">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Services</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
+        <div class="row">
+            <div class="col-lg-12">
+              <h2 class="section-heading">OUR PROCESS</h2>
+              <h3 class="section-subheading">We follow a battle-tested methodology backed by years of experience to build effective AI & ML solutions.
+      
+                </h3>
+            </div>
+          </div>
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -385,302 +516,50 @@
   </section>
 
   <!-- Portfolio Grid -->
-  <section class="bg-light" id="portfolio">
+  <section class="bg-light" id="portfolio" >
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Portfolio</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        <div class="col-lg-12 text-center google-padding">
+          <img src="img/GoogleBadge.png" alt="Google Partnership" class="img-fluid" style="height: 97px; margin-bottom: 30px;">
+          <h3 class="As-Google-Cloud-Part" style="color: #4a4a4a;">As Google Cloud Partners, we leverage the best in class frameworks and toolsets that Google Cloud has developed in order to design, build, support, and deploy scalable data pipelines for AI and ML systems.</h3>
         </div>
       </div>
+      <hr class="Line" style="margin: 120px 0px;">
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="index.html#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Threads</h4>
-            <p class="text-muted">Illustration</p>
+          <div class="col-lg-12">
+            <h2 class="section-heading ">USE CASE</h2>
+            <h3 class="section-subheading ">See how Mavencode’s experience and tools <br> can be applied to solve real world AI & ML challenges across a variety of different industries.
+    
+              </h3>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="index.html#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
+      </div>
+      <div class="row case-row-pos">
+          <div class="col-md-4 mt-10">
+              <img src="img/usecase/AgricultureBackground.jpg" alt="" class="img-fluid">
+              <div class="centered">
+                <h3 class="case-h3">Agriculture</h3>
+                <p class="case-p">Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. </p>
               </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Explore</h4>
-            <p class="text-muted">Graphic Design</p>
+
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="index.html#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
+          <div class="col-md-4 mt-10">
+              <img src="img/usecase/HealthcareBackground.jpg" alt="" class="img-fluid">
+              <div class="centered">
+                  <h3 class="case-h3">Healthcare</h3>
+                  <p class="case-p">Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. </p>
+                </div>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="index.html#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="index.html#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="index.html#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Window</h4>
-            <p class="text-muted">Photography</p>
-          </div>
-        </div>
+          <div class="col-md-4 mt-10">
+              <img src="img/usecase/FinanceBackground.jpg" alt="" class="img-fluid">
+              <div class="centered">
+                  <h3 class="case-h3" style="color: black;">Finance</h3>
+                  <p class="case-p " style="color: black;">Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. </p>
+                </div>
+          </div>  
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>Be Part
-                  <br>Of Our
-                  <br>Story!</h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Team -->
-  <section class="bg-light" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-            <h4>Kay Garland</h4>
-            <p class="text-muted">Lead Designer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="index.html#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="index.html#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="index.html#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="index.html#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="index.html#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="index.html#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-            <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="index.html#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="index.html#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="index.html#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Clients -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <a href="index.html#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="index.html#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="index.html#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <a href="index.html#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Contact -->
   <section id="contact">
