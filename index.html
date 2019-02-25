@@ -115,6 +115,9 @@
     .mt-10{
       margin-top: 25px;
     }
+    .mt-5-mobile{
+      margin-top: 0px;
+    }
     .mt-5{
       margin-top: 12px;
     }
@@ -123,8 +126,7 @@
       padding-right: 56px;
     }
     .pd_0_6{
-      padding: 0px 60px;
-
+      padding: 0px 14px;
     }
     .Chip {
       height: 338px;
@@ -175,6 +177,7 @@
       font-style: normal;
       font-stretch: normal;
       line-height: 1.25;
+      color: #d8d8d8;
       letter-spacing: normal;
     }
 
@@ -228,6 +231,14 @@
       color: #4a4a4a;
     }
 
+    .blog-featured-image{
+      width: 100%;
+      position: absolute;
+      opacity: 0.66;
+      background-color: #0054a9;
+      bottom: 0px;
+      padding: 33px;
+    }
     .blog-date{
       font-family: DIN;
       font-size: 0.9rem;
@@ -283,10 +294,6 @@
     .contact-p{
       font-family: DIN;
       font-size: 1.17rem;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.25;
       letter-spacing: normal;
       color: #ffffff;
     }
@@ -294,10 +301,6 @@
     .get-directions {
       font-family: DIN;
       font-size: 1.17rem;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.25;
       letter-spacing: normal;
       color: #00ccff;
     }
@@ -311,10 +314,6 @@
     .copyright {
       font-family: DIN;
       font-size: 20px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
       letter-spacing: -0.1px;
       text-align: center;
       color: #4a4a4a;
@@ -360,6 +359,33 @@
       outline: 0;
       background-color: #00ccff;
     }
+
+    .blog-featured{
+      font-family: DIN;
+      font-size: 35px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .blog-date {
+      font-family: DIN;
+      font-size: 22px;
+      color: #ffffff;
+    }
+
+    .blog-r{
+      position:absolute; 
+      right: -370px;
+    }
+
+    #blog{
+      background-color: #f7f7f7;
+       width: 80%; 
+       padding: 100px;
+    }
+
+ 
+  
     
     /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
         @media screen and (min-width: 601px) {
@@ -383,13 +409,34 @@
       }
     }
 
-    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
+
+    /* If the screen size is 600px wide or LESS, set the font-size of <div> to 30px */
     @media screen and (max-width: 600px) {
+
+      .mt-5-mobile{
+        margin-top: 25px;
+      }
       .We-build-scalable-da {
         font-size: 25px;
       }
       .bg-light{
         background: #f7f7f7; 
+      }
+      .pd_0_6{
+        padding: 0px 60px;
+      }
+
+      .blog-r{
+        position: relative;
+        right: 0px;
+
+      }
+
+      #blog{
+        background-color: #f7f7f7;
+        width: 100%; 
+        padding: 0px;
       }
     }
   </style>
@@ -442,7 +489,7 @@
       <div class="intro-text">
         <div class="Subtitle">AI + DEEP LEARNING + DATA ANALYTICS</div>
         <div class="We-build-scalable-da">We build scalable data pipeline <br>
-            infrastructures & deploy machine learning 
+            infrastructures & deploy machine learning <br>
             and artficial intelligence models.
         </div>
         <br>
@@ -679,7 +726,7 @@
     </div>
   </section>
 
-  <!-- Portfolio Grid -->
+  <!-- Use cases Grid -->
   <section class="bg-light" id="use-case" >
     <div class="container">
       <div class="row">
@@ -726,7 +773,7 @@
 
 
   
-  <section id="blog" style="background-color: #f7f7f7; width: 80%; padding: 100px;">
+  <section id="blog">
       <div class="container">
           <div class="row">
               <div class="col-lg-8">
@@ -774,11 +821,22 @@
                         </div>
                         
               </div>
-              <div class="col-lg-4" style="position:relative;">
-                    <img  src="img/blog/featured.jpg" class="img-fluid" alt="" style="       position: absolute;
-                    left: 32%;">
-               
-            
+              <div class="col-lg-4 mt-5-mobile" style="position:relative;">
+                  <div class="blog-r" >
+                    <div style="position: relative">
+                        <img  src="img/blog/featured.jpg" class="img-fluid" alt="">
+                        <div class="blog-featured-image">
+                          <h3 class="blog-featured">Your Latest Greatest Post</h3>
+                          <p class="blog-date">JUNE 26, 2018</p>
+                        </div>
+
+                    </div>
+                      
+                      
+                  </div>
+                   
+
+
                     </h3>
                 </div>
             </div>
@@ -787,7 +845,7 @@
 
 
 
-    <section id="contact-us">
+    <section id="contact-us" style="padding-bottom: 30px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -960,141 +1018,7 @@
     </div>
   </div>
 
-  <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
