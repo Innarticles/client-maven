@@ -317,6 +317,7 @@
       color: #4a4a4a;
     }
     .cat_circle {
+      position: relative;
       border: 1px solid #979797;
       border-radius: 50%;
       width: 200px;
@@ -339,6 +340,24 @@
       color: #4a4a4a;
       margin-top: 20px;
     }
+
+    .cat_step{
+      font-family: DIN;
+      position: absolute;
+      right: -12%;
+      font-size: 20px;
+      line-height: 50px;
+      display: block;
+      width: 50px;
+      height: 50px;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      color: #fff;
+      border-radius: 100%;
+      outline: 0;
+      background-color: #00ccff;
+    }
+    
     /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
         @media screen and (min-width: 601px) {
           .We-build-scalable-da  {
@@ -620,6 +639,7 @@
           <div align="center">
               <span class="cat_circle">
                   <img src="img/process/conversation.png">
+                  <span class="cat_step">1</span>
               </span>
           </div>
           <p class="cat_p">Discovery engagement to understand client environment, requirements, and goals.</p>
@@ -629,7 +649,7 @@
             <div align="center">
                 <span class="cat_circle" style="position: relative;">
                     <img src="img/process/requirements.png">
-                    <span>10</span>
+                    <span class="cat_step">2</span>
                 </span>
             </div>
           <p class="cat_p">Follow up consultation(s) to refine project requirements and milestones.</p>
@@ -638,6 +658,7 @@
             <div align="center">
                 <span class="cat_circle">
                     <img src="img/process/build.png">
+                    <span class="cat_step">3</span>
                 </span>
             </div>
           <p class="cat_p">Architect and build data solution for client. Our consultants are available onsite as needed.</p>
@@ -646,6 +667,7 @@
             <div align="center">
                 <span class="cat_circle">
                     <img src="img/process/deploy.png">
+                    <span class="cat_step">4</span>
                 </span>
             </div>
             <p class="cat_p">Deploy data solution in production and provide ongoing client support.</p>
@@ -709,7 +731,7 @@
                   <div class="col-12 mt-10">
                     <div class="row h-100">
                       <div class="col-3 no-gutters">
-                        <img src="https://via.placeholder.com/119" alt="" class="img-fluid">
+                        <img src="img/blog/blog1.png" alt="" class="img-fluid">
                       </div>
                       <div class="col-9 my-auto ">
                         <h3 class="blog-header ">Your Latest Greatest Post</h3>
@@ -720,7 +742,7 @@
                   <div class="col-12 mt-10">
                       <div class="row h-100">
                         <div class="col-3 no-gutters">
-                          <img src="https://via.placeholder.com/119" alt=""  class="img-fluid">
+                          <img src="img/blog/blog2.png" alt=""  class="img-fluid">
                         </div>
                         <div class="col-9 my-auto ">
                           <h3 class="blog-header ">Your Latest Greatest Post</h3>
@@ -731,7 +753,7 @@
                     <div class="col-12 mt-10">
                         <div class="row h-100">
                           <div class="col-3 no-gutters">
-                            <img src="https://via.placeholder.com/119" alt=""  class="img-fluid">
+                            <img src="img/blog/blog1.png" alt=""  class="img-fluid">
                           </div>
                           <div class="col-9 my-auto ">
                             <h3 class="blog-header ">Your Latest Greatest Post</h3>
@@ -748,7 +770,7 @@
                       
               </div>
               <div class="col-lg-6">
-                    <!-- <img  src="https://via.placeholder.com/700x600?text=change+me+Now " class="img-fluid" alt=""> -->
+                    <img  src="img/blog/featured.jpg" class="img-fluid" alt="">
              
           
                     </h3>
