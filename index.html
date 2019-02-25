@@ -119,6 +119,10 @@
     .pr-50{
       padding-right: 56px;
     }
+    .pd_0_6{
+      padding: 0px 60px;
+
+    }
     .Chip {
       height: 338px;
       object-fit: contain;
@@ -269,7 +273,6 @@
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;
-      line-height: 0.56;
       letter-spacing: normal;
       color: #ffffff;
     }
@@ -313,7 +316,29 @@
       text-align: center;
       color: #4a4a4a;
     }
+    .cat_circle {
+      border: 1px solid #979797;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    .cat_circle img {
+      width: 40%;
+      height: auto;
+    }
+
+    .cat_p{
+      font-family: DIN;
+      font-size: 20px;
+      letter-spacing: -0.1px;
+      text-align: center;
+      color: #4a4a4a;
+      margin-top: 20px;
+    }
     /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
         @media screen and (min-width: 601px) {
           .We-build-scalable-da  {
@@ -579,10 +604,6 @@
       </div>
     </section>
 
-
-
-
-
   <!-- Services -->
   <section id="services">
     <div class="container">
@@ -595,30 +616,40 @@
             </div>
           </div>
       <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">E-Commerce</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        <div class="col-md-3 pd_0_6">
+          <div align="center">
+              <span class="cat_circle">
+                  <img src="img/process/conversation.png">
+              </span>
+          </div>
+          <p class="cat_p">Discovery engagement to understand client environment, requirements, and goals.</p>
         </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Responsive Design</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        <div class="col-md-3 pd_0_6">
+            
+            <div align="center">
+                <span class="cat_circle" style="position: relative;">
+                    <img src="img/process/requirements.png">
+                    <span>10</span>
+                </span>
+            </div>
+          <p class="cat_p">Follow up consultation(s) to refine project requirements and milestones.</p>
         </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Web Security</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        <div class="col-md-3 pd_0_6">
+            <div align="center">
+                <span class="cat_circle">
+                    <img src="img/process/build.png">
+                </span>
+            </div>
+          <p class="cat_p">Architect and build data solution for client. Our consultants are available onsite as needed.</p>
         </div>
+        <div class="col-md-3 pd_0_6">
+            <div align="center">
+                <span class="cat_circle">
+                    <img src="img/process/deploy.png">
+                </span>
+            </div>
+            <p class="cat_p">Deploy data solution in production and provide ongoing client support.</p>
+          </div>
       </div>
     </div>
   </section>
