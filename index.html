@@ -34,7 +34,8 @@
   
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -55,7 +56,7 @@
     
  
     #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 70%;}
+    font-size: 80%;}
     .Subtitle {
       font-family: DIN;
       font-size: 17px;
@@ -79,6 +80,7 @@
     .line2 {
       margin:5px 0;
       position: absolute;
+      top: 25%;
       width: 100%;
       height:2px;
       background: repeating-linear-gradient(to right,#979797 0,#979797 10px,transparent 10px,transparent 12px);
@@ -87,6 +89,7 @@
       font-family: DINAlternate;
       font-style: normal;
       font-stretch: normal;
+      font-weight: bold;
       line-height: 1.11;
       letter-spacing: 0.8px;
       color: #ffffff;
@@ -101,7 +104,7 @@
 
     .Weve-Worked-With {
       font-family: DIN;
-      font-size: 15px;
+      font-size: 0.8rem;
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;
@@ -133,7 +136,7 @@
     }
     section h3.section-subheading{
       font-family: DIN;
-      font-size: 34px !important; 
+      font-size: 1.9rem !important; 
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -152,7 +155,10 @@
       margin-top: 0px;
     }
     .mt-5{
-      margin-top: 12px;
+      margin-top: 20px;
+    }
+    .pd-5{
+      padding: 0px 45px;
     }
 
     .pr-50{
@@ -176,12 +182,18 @@
     .what-heading {
       font-family: DINAlternate;
       font-size: 1.41rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
       color: #ffffff;
     }
 
     .what-text {
       font-family: DIN;
       font-size: 1.17rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
       color: #ffffff;
     }
     .centered {
@@ -264,6 +276,18 @@
       color: #4a4a4a;
     }
 
+
+    .contact-icons{
+      font-family: DIN;
+      font-size: 1.1rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.2;
+      letter-spacing: normal;
+      color: #ffffff;
+    }
+
     .blog-btn{
       border-radius: 7px;
       color: white;
@@ -281,11 +305,11 @@
         color: #9b9b9b;
         background-color: #f7f7f7;
         /* background-clip: padding-box; */
-        border: 1px solid #9b9b9b;
+        border: 0px solid #9b9b9b;
+        border-bottom: 1px solid #9b9b9b;
         border-radius: .0rem;
         /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
     }
-
     .no-gutters {
       margin-right: 0;
       margin-left: 0;
@@ -395,7 +419,15 @@
        padding: 100px;
     }
 
- 
+    .small-img{
+      width: 70%;
+    }
+
+    @media (min-width: 768px){
+    header.masthead .intro-text {
+        padding-top: 401px;
+        padding-bottom: 150px;
+    }}
   
     
     /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -403,6 +435,9 @@
           .We-build-scalable-da  {
         font-size: 40px;
       }
+
+      .case-p {
+      font-size: 1.2rem;}
 
       .google-padding{
         padding: 0px 182px;
@@ -452,6 +487,7 @@
 
       }
 
+    
       #blog{
         background-color: #f7f7f7;
         width: 100%; 
@@ -501,6 +537,38 @@
         background-color: #f7f7f7;
         width: 100%; 
         padding: 0px;
+      }
+    }
+
+
+    @media (min-width: 768px){
+      /* .seven-cols .col-md-1,
+      .seven-cols .col-sm-1,
+      .seven-cols .col-lg-1  {
+        flex: 0 0 100%;
+        max-width: 100%;
+      } */
+    }
+
+    @media (min-width: 992px) {
+      .seven-cols .col-md-1,
+      .seven-cols .col-sm-1,
+      .seven-cols .col-lg-1 {
+        flex: 0 0 14.285714285714285714285714285714%;
+        max-width: 14.285714285714285714285714285714%;
+      }
+    }
+
+    /**
+    *  The following is not really needed in this case
+    *  Only to demonstrate the usage of @media for large screens
+    */    
+    @media (min-width: 1200px) {
+      .seven-cols .col-md-1,
+      .seven-cols .col-sm-1,
+      .seven-cols .col-lg-1 {
+        flex: 0 0 14.285714285714285714285714285714%;
+        max-width: 14.285714285714285714285714285714%;
       }
     }
   </style>
@@ -577,40 +645,45 @@
   <!-- Clients -->
   <section class="py-0">
       <div class="container h-100">
-        <div class="row  align-items-center h-100">
-            <div class="col-md-2 col-sm-6 mt-5 text-center">
-                <a href="index.html#" class='Weve-Worked-With'>
+        <div class="row  align-items-center h-100 seven-cols mt-10">
+            <div class="col-md-1 col-sm-6 text-center pd-0" >
+                <a href="index.html#" class='Weve-Worked-With mx-auto'>
                     WE’VE WORKED WITH
                 </a>
               </div>
-          <div class="col-md-2 col-sm-6 mt-5">
+          <div class="col-md-1 col-sm-6 pd-5">
             <a href="index.html#">
               <img class="img-fluid d-block mx-auto client-item" src="img/clients/Twitter.png" alt="">
             </a>
           </div>
-          <div class="col-md-2 col-sm-6 mt-5">
+          <div class="col-md-1 col-sm-6 pd-5">
             <a href="index.html#">
               <img class="img-fluid d-block mx-auto client-item" src="img/clients/Ciena.png" alt="">
             </a>
           </div>
-          <div class="col-md-2 col-sm-6 mt-5">
+          <div class="col-md-1 col-sm-6 pd-5">
+            <a href="index.html#">
+              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Adaware.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-1 col-sm-6 pd-5">
             <a href="index.html#">
               <img class="img-fluid d-block mx-auto client-item" src="img/clients/Client.png" alt="">
             </a>
           </div>
-          <div class="col-md-2 col-sm-6 mt-5">
+          <div class="col-md-1 col-sm-6 pd-5">
             <a href="index.html#">
               <img class="img-fluid d-block mx-auto client-item" src="img/clients/WIND.png" alt="">
             </a>
           </div>
-          <div class="col-md-2 col-sm-6 mt-5">
+          <div class="col-md-1 col-sm-6 pd-5">
               <a href="index.html#">
                 <img class="img-fluid d-block mx-auto client-item" src="img/clients/StarBucks.png" alt="">
               </a>
             </div>
             
         </div>
-        <hr class="Line" style="margin-top: 40px;">
+        <hr class="Line" >
       </div>
     </section>
 
@@ -628,7 +701,7 @@
                 <!-- png -->
   
                 <img src="img/chip.png"
-                    class="img-fluid" >
+                    class="img-fluid" style="width: 55%;">
               </div>
             </div>
         </div>
@@ -651,7 +724,7 @@
           <div class="col-md-6 col-sm-6 mt-20">
             <div class="row">
                 <div class="col-3">
-                    <img src="img/what/algorithm.png" alt="" class="img-fluid">
+                    <img src="img/what/algorithm.png" alt="" class="img-fluid small-img">
                   </div>
                   <div class="col-9 pr-50">
                     <h3 class="what-heading">
@@ -665,7 +738,7 @@
           <div class="col-md-6 col-sm-6 mt-20">
               <div class="row">
                   <div class="col-3">
-                      <img src="img/what/pipeline.png" alt="" class="img-fluid">
+                      <img src="img/what/pipeline.png" alt="" class="img-fluid small-img">
                     </div>
                     <div class="col-9 pr-50">
                       <h3 class="what-heading">
@@ -681,7 +754,7 @@
           <div class="col-md-6 col-sm-6 mt-20"">
               <div class="row">
                   <div class="col-3">
-                      <img src="img/what/folder.png" alt="" class="img-fluid">
+                      <img src="img/what/folder.png" alt="" class="img-fluid small-img">
                     </div>
                     <div class="col-9 pr-50">
                       <h3 class="what-heading">
@@ -696,7 +769,7 @@
           <div class="col-md-6 col-sm-6 mt-20"">
               <div class="row">
                   <div class="col-3">
-                      <img src="img/what/project-management.png" alt="" class="img-fluid">
+                      <img src="img/what/project-management.png" alt="" class="img-fluid small-img">
                     </div>
                     <div class="col-9 pr-50">
                       <h3 class="what-heading">
@@ -711,7 +784,7 @@
           <div class="col-md-6 col-sm-6 mt-20"">
               <div class="row">
                   <div class="col-3">
-                      <img src="img/what/analysis.png" alt="" class="img-fluid">
+                      <img src="img/what/analysis.png" alt="" class="img-fluid small-img">
                     </div>
                     <div class="col-9 pr-50">
                       <h3 class="what-heading">
@@ -726,7 +799,7 @@
           <div class="col-md-6 col-sm-6 mt-20"">
               <div class="row">
                   <div class="col-3">
-                      <img src="img/what/presentation.png" alt="" class="img-fluid">
+                      <img src="img/what/presentation.png" alt="" class="img-fluid small-img">
                     </div>
                     <div class="col-9 pr-50">
                       <h3 class="what-heading">
@@ -810,7 +883,7 @@
       <div class="row" >
           <div class="col-lg-12">
             <h2 class="section-heading ">USE CASE</h2>
-            <h3 class="section-subheading ">See how Mavencode’s experience and tools <br> can be applied to solve real world AI & ML challenges across a variety of different industries.
+            <h3 class="section-subheading ">See how Mavencode’s experience and tools <br> can be applied to solve real world AI & ML  <br>   challenges across a variety of different industries.
     
               </h3>
           </div>
@@ -950,13 +1023,13 @@
                       
                         <h2 class="contact-header">CONNECT WITH US</h2>
                         <br><br>
-                        <span>hello@mavencode.com</span>
+                        <span class="contact-icons"><i class="far fa-envelope  fa-lg"></i> hello@mavencode.com</span>
                         <br>
-                        <span>+1 682 268 0571</span>
+                        <span class="contact-icons"> <i class="fas fa-phone fa-lg"></i> +1 682 268 0571</span>
                         <br>
-                        <span>LinkedIn</span>
+                        <span class="contact-icons"> <i class="fab fa-linkedin fa-lg"></i> LinkedIn</span>
                         <br>
-                        <span>Twitter</span>
+                        <span class="contact-icons"> <i class="fab fa-twitter fa-lg"></i> Twitter</span>
 
                     </div>
                     
