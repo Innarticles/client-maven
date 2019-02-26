@@ -67,6 +67,22 @@
       color: #00ccff;
       margin-bottom: 10px;
     }
+
+
+    /* .line2 {
+      margin:5px 0;
+      height:1px;
+      background:
+        repeating-linear-gradient(to right #979797 0, #979797 10px,transparent 10px,transparent 12px)
+    } */
+
+    .line2 {
+      margin:5px 0;
+      position: absolute;
+      width: 100%;
+      height:2px;
+      background: repeating-linear-gradient(to right,#979797 0,#979797 10px,transparent 10px,transparent 12px);
+    }
     .We-build-scalable-da {
       font-family: DINAlternate;
       font-style: normal;
@@ -179,7 +195,7 @@
 
     .case-p {
       font-family: DIN;
-      font-size: 1.17rem;
+      font-size: 0.9rem;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
@@ -314,6 +330,7 @@
     }
     .cat_circle {
       position: relative;
+      background: white;
       border: 1px solid #979797;
       border-radius: 50%;
       width: 200px;
@@ -404,9 +421,58 @@
     }
 
 
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px)  { 
+      /* STYLES GO HERE */
+
+      .Rectangle {
+        background-image:linear-gradient(#00ccff, #0054a9); /* W3C */
+      } 
+
+      .line2{
+        display: none;
+      }
+      .mt-5-mobile{
+        margin-top: 25px;
+      }
+      .We-build-scalable-da {
+        font-size: 25px;
+      }
+      .bg-light{
+        background: #f7f7f7; 
+      }
+      .pd_0_6{
+        padding: 0px 60px;
+      }
+
+      .blog-r{
+        position: relative;
+        right: 0px;
+
+      }
+
+      #blog{
+        background-color: #f7f7f7;
+        width: 100%; 
+        padding: 60px 0px
+      }
+
+      .case-row-pos {
+          position: absolute;
+          bottom: -10%;
+          left: 9%;
+          right: 9%;
+      }
+
+    }
 
     /* If the screen size is 600px wide or LESS, set the font-size of <div> to 30px */
     @media screen and (max-width: 600px) {
+
+      .line2{
+        display: none;
+      }
 
       .Rectangle {
         background-image:linear-gradient(#00ccff, #0054a9); /* W3C */
@@ -496,7 +562,10 @@
         <br>
         <br>
         <div class="">
-            <img src="img/arrowdown.png" alt=""  class="Arrow-Down">
+          <a href="index.html#about">
+              <img src="img/arrowdown.png" alt=""  class="Arrow-Down">
+          </a>
+            
           </div>
 
       </div>
@@ -680,13 +749,14 @@
         <div class="row">
             <div class="col-lg-12">
               <h2 class="section-heading">OUR PROCESS</h2>
-              <h3 class="section-subheading">We follow a battle-tested methodology backed by years of experience to build effective AI & ML solutions.
+              <h3 class="section-subheading">We follow a battle-tested methodology  <br> backed by years of experience to build <br> effective AI & ML solutions.
       
                 </h3>
             </div>
           </div>
-      <div class="row text-center">
-        <div class="col-md-3 pd_0_6">
+      <div class="row text-center" style="position:relative">
+          <div class="line2"></div>
+        <div class="col-12  col-md-6 col-lg-3 pd_0_6">
           <div align="center">
               <span class="cat_circle">
                   <img src="img/process/conversation.png">
@@ -695,7 +765,7 @@
           </div>
           <p class="cat_p">Discovery engagement to understand client environment, requirements, and goals.</p>
         </div>
-        <div class="col-md-3 pd_0_6">
+        <div class="col-12  col-md-6 col-lg-3 pd_0_6">
             
             <div align="center">
                 <span class="cat_circle" style="position: relative;">
@@ -705,7 +775,7 @@
             </div>
           <p class="cat_p">Follow up consultation(s) to refine project requirements and milestones.</p>
         </div>
-        <div class="col-md-3 pd_0_6">
+        <div class="col-12  col-md-6 col-lg-3 pd_0_6">
             <div align="center">
                 <span class="cat_circle">
                     <img src="img/process/build.png">
@@ -714,7 +784,7 @@
             </div>
           <p class="cat_p">Architect and build data solution for client. Our consultants are available onsite as needed.</p>
         </div>
-        <div class="col-md-3 pd_0_6">
+        <div class="col-12  col-md-6 col-lg-3 pd_0_6">
             <div align="center">
                 <span class="cat_circle">
                     <img src="img/process/deploy.png">
