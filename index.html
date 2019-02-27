@@ -69,6 +69,10 @@
       margin-bottom: 10px;
     }
 
+    .case_link{
+      color: #0054a9;
+    }
+
 
     /* .line2 {
       margin:5px 0;
@@ -456,6 +460,10 @@
     }
 
 
+    .portfolio-modal .modal-content h2 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
     @media only screen 
     and (min-device-width : 768px) 
     and (max-device-width : 1024px)  { 
@@ -740,7 +748,7 @@
                         Data Preparation, Feature Engineering, & Algorithm Implementation
                     </h3>
                     <p class="what-text">Data is the lifeblood that drives any successful AI & ML business strategy. </p>
-                    <a href="" class="learn-more">LEARN MORE</a>
+                    <a  class="portfolio-link learn-more" data-toggle="modal" href="#portfolioModal1">LEARN MORE</a>
                   </div>
             </div>
           </div>
@@ -755,7 +763,7 @@
                       </h3>
                       <p class="what-text">Big Data Requires Big Infrastructure. At MavenCode, we build scalable AI & ML data pipelines for organizations.
                         </p>
-                      <a href="" class="learn-more">LEARN MORE</a>
+                        <a  class="portfolio-link learn-more" data-toggle="modal" href="#portfolioModal2">LEARN MORE</a>
                     </div>
               </div>
             
@@ -770,7 +778,7 @@
                           Dev Ops & Cloud Migration Strategy
                       </h3>
                       <p class="what-text">Let MavenCode help you make your organization’s move to the Cloud a reality. </p>
-                      <a href="" class="learn-more">LEARN MORE</a>
+                      <a  class="portfolio-link learn-more" data-toggle="modal" href="#portfolioModal3">LEARN MORE</a>
                     </div>
               </div>
             
@@ -785,7 +793,7 @@
                           Consulting Services (Kubeflow, Kubernetes + Managed Cloud Orchestration)
                       </h3>
                       <p class="what-text">Let our experts guide you through the complicated and quickly changing</p>
-                      <a href="" class="learn-more">LEARN MORE</a>
+                      <a  class="portfolio-link learn-more" data-toggle="modal" href="#portfolioModal4">LEARN MORE</a>
                     </div>
               </div>
             
@@ -800,7 +808,7 @@
                           Data Visualization
                       </h3>
                       <p class="what-text">Data Visualization is key component of any successful data acquisition, analysis, and monetization strategy.</p>
-                      <a href="" class="learn-more">LEARN MORE</a>
+                      <a  class="portfolio-link learn-more" data-toggle="modal" href="#portfolioModal5">LEARN MORE</a>
                     </div>
               </div>
             
@@ -815,7 +823,7 @@
                           Training
                       </h3>
                       <p class="what-text">We are passionate about AI & ML and want to share our knowledge.  </p>
-                      <a href="" class="learn-more">LEARN MORE</a>
+                      <a  class="portfolio-link learn-more" data-toggle="modal" href="#portfolioModal6">LEARN MORE</a>
                     </div>
               </div>
             
@@ -825,7 +833,7 @@
       </div>
     </section>
 
-  <!-- Services -->
+  <!-- Process -->
   <section id="process">
     <div class="container">
         <div class="row">
@@ -898,28 +906,43 @@
           </div>
       </div>
       <div class="row case-row-pos">
-          <div class="col-md-4 mt-10">
+          <div class="col-md-3 mt-10">
               <img src="img/usecase/AgricultureBackground.jpg" alt="" class="img-fluid">
               <div class="centered">
-                <h3 class="case-h3">Agriculture</h3>
-                <p class="case-p">Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. </p>
+                <h3 class="case-h3">Retail and E-commerce</h3>
+                <p class="case-p">Every business wants to achieve growth at great scale and better serve its customers to
+                    build up their brand equity and achieve customer loyalty for life. The challenge of doing ...</p>
+                    <a  class="portfolio-link case_link" data-toggle="modal" href="#portfolioModalRetail">Read More</a>
               </div>
 
           </div>
-          <div class="col-md-4 mt-10">
+          <div class="col-md-3 mt-10">
               <img src="img/usecase/HealthcareBackground.jpg" alt="" class="img-fluid">
               <div class="centered">
                   <h3 class="case-h3">Healthcare</h3>
-                  <p class="case-p">Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. </p>
+                  <p class="case-p">The growing abundance of healthcare data today comes from a variety of different
+                      sources and forms, such as Electronic Health Records (EHRs), genomic sequencing ... </p>
+                      <a  class="portfolio-link case_link" data-toggle="modal" href="#portfolioModalHealth" style="color: white;">Read More</a>
                 </div>
           </div>
-          <div class="col-md-4 mt-10">
+          <div class="col-md-3 mt-10">
               <img src="img/usecase/FinanceBackground.jpg" alt="" class="img-fluid">
               <div class="centered">
                   <h3 class="case-h3" style="color: black;">Finance</h3>
-                  <p class="case-p " style="color: black;">Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise design elements over content. </p>
+                  <p class="case-p " style="color: black;">At its core the financial industry has always been driven by data in the form of
+                      transactions - ranging from a simple exchange of money or credit in a store for goods, ... </p>
+                      <a  class="portfolio-link case_link" data-toggle="modal" href="#portfolioModalFinance">Read More</a>
                 </div>
-          </div>  
+          </div>
+          <div class="col-md-3 mt-10">
+              <img src="img/usecase/FinanceBackground.jpg" alt="" class="img-fluid">
+              <div class="centered">
+                  <h3 class="case-h3" style="color: black;">Oil and Gas</h3>
+                  <p class="case-p " style="color: black;">Machine learning (ML) is transforming the ways in which oil and gas exploration is done.
+                      With ML techniques, researchers, geoscientists and reservoir engineers ...</p>
+                      <a  class="portfolio-link case_link" data-toggle="modal" href="#portfolioModalOil">Read More</a>
+                </div>
+          </div> 
       </div>
     </div>
   </section>
@@ -1117,18 +1140,11 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                <h2 class="text-uppercase"> Data Preparation, Feature Engineering, & Algorithm Implementation</h2>
+                <p>Data is the lifeblood that drives any successful AI & ML business strategy. We begin to develop this strategy for clients by closely assisting with data gathering, cleaning, and preparation (data labeling). Once data is available in data lakes or data warehouses, we then work side by side with the client and domain experts to develop a deeper and understanding of the data. Following this rigorous process allow us to understand and extract key features of the data, a process more formally known as Feature Engineering. Once completed, MavenCode assists with choosing the right AI or ML algorithm for the data, and helps guide the client through the entire training, testing and validation process. Finally, our consultants work with client developers and data scientists to put the AI & ML model into production so it can be used for prediction and support business operations.
+
+                </p>
+               
               </div>
             </div>
           </div>
@@ -1151,18 +1167,10 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close Project</button>
+                <h2 class="text-uppercase">Data Pipelines</h2>
+                <p>Big Data Requires Big Infrastructure. At MavenCode, we build scalable AI & ML data pipelines for organizations interested in monetizing the ever increasing amounts of data generated by their customers, products (e.g. IoT devices), or services. These pipelines easily adapt to data of any frequency and can scale up and down easily as the velocity of data increases or decreases. Engineered to be robust and portable end to end solutions, MavenCode’s data pipelines enable large scale AI & ML modeling for data scientists and data engineers in an organization, helping to cut down the time needed to productionize a model, and therefore increasing overall data strategy ROI.
+
+                </p>
               </div>
             </div>
           </div>
@@ -1170,6 +1178,288 @@
       </div>
     </div>
   </div>
+
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">DEVOPS & CLOUD MIGRATION STRATEGY </h2>
+                <p>Let MavenCode help you make your organization’s move to the Cloud a reality. We work closely with clients to help move their legacy, monolithic applications into the cloud to harness significant cost savings, while improving application availability and scalability. At MavenCode, we have deep experience architecting microservices and make heavy use of cutting-edge container creation and orchestration tools to drive workload efficiency.
+
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Consulting Services (Kubeflow, Kubernetes + Managed Cloud Orchestration) </h2>
+                <p>Let our experts guide you through the complicated and quickly changing landscape of application containerization and managed container orchestration. MavenCode has years of experience developing cloud based containerized applications, and today uses cutting edge container orchestration tools such as Kubernetes to help clients effectively manage large scale deployments of thousands of containerized applications and microservices. More recently, we taken our experience in containers and orchestration and combined it with Big Data to build fully managed, containerized AI & ML workflows using Kubeflow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Data Visualization</h2>
+                <p>Data Visualization is key component of any successful data acquisition, analysis, and monetization strategy. MavenCode helps clients get an intuitive picture of their data by utilizing readily available cloud enabled visualization tools such as Google’s DataStudio 360. We also build custom visualization dashboards to ensure that everyone form Data Scientist to C-Level Executive has access to key metrics such as AI & ML model performance to overall Big Data strategy ROI.
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Training</h2>
+                <p>
+                    We are passionate about AI & ML and want to share our knowledge. MavenCode provides on-site or remote training opportunities for clients looking to overcome the steep learning and adoption curve of AI & ML technologies. Our training curriculums can easily be customized to fit your organization's specific needs. For more information, please contact us.
+
+
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- portfolioModalOil -->
+  <div class="portfolio-modal modal fade" id="portfolioModalOil" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Oil and Gas</h2>
+                  <p>
+                      Machine learning (ML) is transforming the ways in which oil and gas exploration is done.
+                      With ML techniques, researchers, geoscientists and reservoir engineers can leverage
+                      insights from advanced deep learning models to identify complex patterns such as faults
+                      or stratigraphic geometries from seismic datasets in a sophisticated ML-based workflow
+                      for multiple iterations and therefore accelerating the whole process. By leveraging on
+                      Google Cloud technology our team is actively working on data-pipelines optimized to
+                      orchestrate this kind of high capacity workflow that enhances collaboration between
+                      data scientist, geoscientist and every stakeholder in the organization.
+  
+  
+  
+  
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  <!-- portfolioModalHealth -->
+  <div class="portfolio-modal modal fade" id="portfolioModalHealth" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Healthcare</h2>
+                  <p>
+                      The growing abundance of healthcare data today comes from a variety of different
+                      sources and forms, such as Electronic Health Records (EHRs), genomic sequencing,
+                      medical IoT devices, and many more. This makes the healthcare industry a very
+                      interesting one to apply Machine Learning, and the diversity of data formats and
+                      contexts makes it a big challenge to solve Healthcare Analytics problems using
+                      conventional means. At MavenCode we thrive in solving complex problems of this
+                      nature by working with medical experts in this field to craft out a clear and well-defined
+                      approach to harness ML workflow techniques. This helps us integrate and connect all
+                      these disparate systems and derive intelligent insights to better improve patient
+                      treatment, while at the same time reducing cost. We leverage Google Cloud technology
+                      products like BigQuery, Pubsub and Cloud ML in our solutions to rapidly prototype and
+                      expand concepts into deployable production implementations that help augment the
+                      doctor's insight and knowledge about their patients.
+  
+  
+  
+  
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- portfolioModalRetail -->
+  <div class="portfolio-modal modal fade" id="portfolioModalRetail" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Retail and E-commerce</h2>
+                  <p>
+                      Every business wants to achieve growth at great scale and better serve its customers to
+                      build up their brand equity and achieve customer loyalty for life. The challenge of doing
+                      this at scale becomes enormous without the power of ML techniques to understand
+                      each customer uniquely, for instance: their preferences, historical buying trends, and
+                      taste. Building the infrastructure to handle this kind of data capacity at scale and from
+                      scratch is not a trivial task. However, by leveraging Google Cloud technology tools like
+                      Google Managed Kubernetes, Dataflow, Pubsub, Storage and Cloud ML, we
+                      successfully help our customers go from “zero to hero” in a matter of days. With Google
+                      Managed services, we find it easy to quickly deploy Proof of Concept (PoC)
+                      implementations that we gradually mature into a production grade quality, without
+                      having to worry too much about the underlying infrastructure or how it might scale.
+  
+  
+  
+  
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- portfolioModalFinance -->
+  <div class="portfolio-modal modal fade" id="portfolioModalFinance" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Finance</h2>
+                  <p>
+                      At its core the financial industry has always been driven by data in the form of
+                      transactions - ranging from a simple exchange of money or credit in a store for goods,
+                      all the way to multi-million dollar automated stock trades that execute in mere fractions
+                      of a second. Given that banking institutions are in the business of both warehousing
+                      (holding) and trading risk, the opportunity for advanced data analytics to gain a
+                      competitive advantage in the financial industry is enormous. For instance, AI & ML
+                      modeling can be used to more accurately assess the default probabilities on a portfolio
+                      of loans, predict whether or not a given credit card transaction is fraudulent, or even
+                      predict the price of securities themselves (stocks, bonds, futures, etc.) leading to new
+                      automated trading strategies. However, all this modeling requires enormous data and
+                      data infrastructure to be done successfully. At MavenCode, we leverage Google Cloud
+                      technology products like BigQuery, Cloud Bigtable, Pubsub, and Cloud ML to build
+                      scalable, end to end data pipelines that can be easily tuned to ingest anything from
+                      large batch jobs to high-frequency market data. The data pipelines enable us to work
+                      together with our clients to develop advanced analytical solutions that provide them with
+                      an edge in the hyper-competitive financial market place.
+  
+  
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 
 
