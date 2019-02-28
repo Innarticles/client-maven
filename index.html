@@ -180,7 +180,12 @@
     }
 
     .Rectangle {
-      background-image: url("img/services-background.png"), linear-gradient(#00ccff, #0054a9); /* W3C */
+      background: url('img/services-background.png') center center no-repeat; 
+      background: url("img/services-background.png") center center no-repeat, linear-gradient(#00ccff, #0054a9); /* W3C */
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     } 
     .white {
         color: #fff !important;
@@ -589,6 +594,23 @@
       .seven-cols .col-lg-1 {
         flex: 0 0 14.285714285714285714285714285714%;
         max-width: 14.285714285714285714285714285714%;
+      }
+    }
+
+
+    @media screen and (min-width: 1400px) {
+      .container {
+        width: 1370px !important;
+      }
+    }
+    @media screen and (min-width: 1600px) {
+      .container {
+        width: 1570px !important;
+      }
+    }
+    @media screen and (min-width: 1900px) {
+      .container {
+        width: 1870px !important;
       }
     }
   </style>
