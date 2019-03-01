@@ -438,7 +438,7 @@
     @media (min-width: 768px){
     header.masthead .intro-text {
         padding-top: 401px;
-        padding-bottom: 150px;
+        padding-bottom: 60px;
     }}
   
     
@@ -446,6 +446,11 @@
         @media screen and (min-width: 601px) {
           .We-build-scalable-da  {
         font-size: 40px;
+      }
+
+      .portfolio-modal .modal-dialog {
+          margin: auto;
+          max-width: 50vw;
       }
 
       .case-p {
@@ -461,7 +466,7 @@
       }
       .case-row-pos{
         position: absolute;
-        bottom: -14%;
+        bottom: -18%;
         left: 9%;
         right: 9%;
       }
@@ -558,6 +563,13 @@
 
       }
 
+      .case-p {
+      font-size: 1.5rem;
+    }
+      .case-h3{
+        font-size: 2.0rem;
+      }
+
       #blog{
         background-color: #f7f7f7;
         width: 100%; 
@@ -595,6 +607,7 @@
         flex: 0 0 14.285714285714285714285714285714%;
         max-width: 14.285714285714285714285714285714%;
       }
+      
     }
 
 
@@ -602,25 +615,49 @@
       body{
         margin: 0 10%;
       }
-      .container {
+      .case-row-pos{
+        bottom: -24%;
+      } 
+      /* .container {
         width: 1370px !important;
-      }
+      } */
+   
     }
     @media screen and (min-width: 1600px) {
       body{
         margin: 0 15%;
       }
-      .container {
-        width: 1570px !important;
+      .case-row-pos{
+        bottom: -24%;
       }
+      /* .container {
+        width: 1570px !important;
+      } */
+
     }
     @media screen and (min-width: 1900px) {
       body{
         margin: 0 20%;
       }
-      .container {
-        width: 1870px !important;
+      .case-row-pos{
+        bottom: -24%;
       }
+     
+    }
+
+    .client_logo_a {
+        position: relative;
+        display: inline-block;
+    }
+    .client_logo_a .img-top {
+        display: none !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .client_logo_a:hover .img-top {
+        display: inline;
     }
   </style>
 
@@ -698,38 +735,49 @@
       <div class="container h-100">
         <div class="row  align-items-center h-100 seven-cols mt-10">
             <div class="col-md-1 col-sm-6 text-center pd-0" >
-                <a href="index.html#" class='Weve-Worked-With mx-auto'>
+                <h3 class='Weve-Worked-With mx-auto'>
                     WE’VE WORKED WITH
-                </a>
+                <h3>
               </div>
           <div class="col-md-1 col-sm-6 pd-5">
-            <a href="index.html#">
-              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Twitter.png" alt="">
+            <a href="https://www.twitter.com" target="_blank" class="client_logo_a">
+              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Twitter.png" onmouseover="this.src='img/clients/Twitter2.png'"
+              onmouseout="this.src='img/clients/Twitter.png'" alt="Twitter">
+              <!-- <img src="img/clients/Twitter2.png" class="img-fluid d-block mx-auto client-item img-top"> -->
             </a>
           </div>
           <div class="col-md-1 col-sm-6 pd-5">
-            <a href="index.html#">
-              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Ciena.png" alt="">
+            <a href="https://www.ciena.com/" target="_blank" class="client_logo_a">
+              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Ciena.png" onmouseover="this.src='img/clients/Ciena2.png'"
+              onmouseout="this.src='img/clients/Ciena.png'" alt="Ciena">
             </a>
           </div>
           <div class="col-md-1 col-sm-6 pd-5">
-            <a href="index.html#">
-              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Adaware.png" alt="">
+            <a href="https://www.adaware.com/" target="_blank" class="client_logo_a">
+              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Adaware.png"
+              onmouseover="this.src='img/clients/Adaware2.png'"
+              onmouseout="this.src='img/clients/Adaware.png'"  alt="Adaware">
             </a>
           </div>
           <div class="col-md-1 col-sm-6 pd-5">
-            <a href="index.html#">
-              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Client.png" alt="">
+            <a href="index.html#" target="_blank" class="client_logo_a">
+              <img class="img-fluid d-block mx-auto client-item" src="img/clients/Client.png" 
+              onmouseover="this.src='img/clients/Client2.png'"
+              onmouseout="this.src='img/clients/Client.png'" 
+              alt="">
             </a>
           </div>
           <div class="col-md-1 col-sm-6 pd-5">
-            <a href="index.html#">
-              <img class="img-fluid d-block mx-auto client-item" src="img/clients/WIND.png" alt="">
+            <a href="https://www.windriver.com/" target="_blank" class="client_logo_a">
+              <img class="img-fluid d-block mx-auto client-item" src="img/clients/WIND.png"
+              onmouseover="this.src='img/clients/WIND2.png'"
+              onmouseout="this.src='img/clients/WIND.png'"  alt="WIND">
             </a>
           </div>
           <div class="col-md-1 col-sm-6 pd-5">
-              <a href="index.html#">
-                <img class="img-fluid d-block mx-auto client-item" src="img/clients/StarBucks.png" alt="">
+              <a href="https://www.starbucks.com/" target="_blank" class="client_logo_a">
+                <img class="img-fluid d-block mx-auto client-item" src="img/clients/StarBucks.png" onmouseover="this.src='img/clients/StarBucks2.png'"
+                onmouseout="this.src='img/clients/StarBucks.png'"  alt="StarBucks">
               </a>
             </div>
             
@@ -983,7 +1031,7 @@
 
 
   
-  <section id="blog">
+  <!-- <section id="blog">
       <div class="container">
           <div class="row">
               <div class="col-lg-8">
@@ -1051,7 +1099,7 @@
                 </div>
             </div>
       </div>
-    </section>
+  </section> -->
 
 
 
@@ -1171,7 +1219,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-12 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase"> Data Preparation, Feature Engineering, & Algorithm Implementation</h2>
@@ -1198,7 +1246,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-12 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Data Pipelines</h2>
@@ -1225,7 +1273,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-12 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">DEVOPS & CLOUD MIGRATION STRATEGY </h2>
@@ -1254,7 +1302,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-12 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Consulting Services (Kubeflow, Kubernetes + Managed Cloud Orchestration) </h2>
@@ -1281,7 +1329,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-12 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Data Visualization</h2>
@@ -1309,7 +1357,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-12 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
                 <h2 class="text-uppercase">Training</h2>
@@ -1339,7 +1387,7 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
+              <div class="col-lg-12 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Oil and Gas</h2>
@@ -1377,7 +1425,7 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
+              <div class="col-lg-12 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Healthcare</h2>
@@ -1420,7 +1468,7 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
+              <div class="col-lg-12 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Retail and E-commerce</h2>
@@ -1461,7 +1509,7 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
+              <div class="col-lg-12 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Finance</h2>
