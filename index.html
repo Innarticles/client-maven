@@ -643,22 +643,11 @@
      
     }
 
-    .client_logo_a {
-        position: relative;
-        display: inline-block;
-    }
-    .client_logo_a .img-top {
-        display: none !important;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-    }
-    .client_logo_a:hover .img-top {
-        display: inline;
+    .modal-body{
+      font-family: DIN;
     }
   </style>
-
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 
@@ -1180,9 +1169,26 @@
                                     <p class="help-block text-danger"></p>
                                   </div>
                                 </div>
+
+
+                                <div class="col-12">
+                                    <div class="g-recaptcha" data-sitekey="6LeFx5QUAAAAAGLHXCFraTBA5wKg0t4NNMWvHI8h"></div>
+                                </div>
+                              
+
+
+
+
+
+
+
+
+
                                 <div class="clearfix"></div>
+                                <br>
                                 <div class="col-lg-12">
                                   <div id="success"></div>
+                                  <br>
                                   <button id="sendMessageButton" class="btn blog-btn text-uppercase" type="submit">Submit</button>
                                 </div>
                               </div>
