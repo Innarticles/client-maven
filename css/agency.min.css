@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: 'DINAlternate';
-    src: url('css/DINAlternateRegular.otf');
+    src: url('DINAlternateRegular.otf');
 }
 
 @font-face {
     font-family: 'DIN';
-    src: url('css/D-DIN.otf');
+    src: url('D-DIN.otf');
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -152,8 +152,8 @@ section h3.section-subheading {
 }
 
 .Rectangle {
-    background: url('img/services-background.png') center center no-repeat;
-    background: url("img/services-background.png") center center no-repeat, linear-gradient(#00ccff, #0054a9);
+    background: url('../img/services-background.png') center center no-repeat;
+    background: url("../img/services-background.png") center center no-repeat, linear-gradient(#00ccff, #0054a9);
     /* W3C */
     -webkit-background-size: cover;
     -moz-background-size: cover;
