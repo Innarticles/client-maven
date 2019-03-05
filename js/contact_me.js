@@ -8,23 +8,25 @@ $(function() {
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
-      var name = $("input#name").val();
+      var firstName = $("input#first_name").val();
+      var lastName = $("input#last_name").val();
       var email = $("input#email").val();
-      var phone = $("input#phone").val();
+      var company = $("input#company").val();
       var message = $("textarea#message").val();
-      var firstName = name; // For Success/Failure Message
-      // Check for white space in name for Success/Fail message
-      if (firstName.indexOf(' ') >= 0) {
-        firstName = name.split(' ').slice(0, -1).join(' ');
-      }
+      // var firstName = name; // For Success/Failure Message
+      // // Check for white space in name for Success/Fail message
+      // if (firstName.indexOf(' ') >= 0) {
+      //   firstName = name.split(' ').slice(0, -1).join(' ');
+      // }
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "././mail/contact_me.php",
+        url: "https://mavencode.com//mavencode_post/data",
         type: "POST",
         data: {
-          name: name,
-          phone: phone,
+          firstName: firstName,
+          lastName: lastName,
+          company: company,
           email: email,
           message: message
         },
