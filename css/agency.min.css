@@ -417,6 +417,12 @@ header.masthead {
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 
 @media screen and (min-width: 601px) {
+    .seven-cols .col-md-1,
+    .seven-cols .col-sm-1,
+    .seven-cols .col-lg-1 {
+        flex: 0 0 14.285714285714285714285714285714%;
+        max-width: 14.285714285714285714285714285714%;
+    }
     .We-build-scalable-da {
         font-size: 40px;
     }
@@ -441,6 +447,11 @@ header.masthead {
         left: 9%;
         right: 9%;
     }
+   
+
+    section h3.section-subheading {
+        /* font-size: 1.3rem !important; */
+    }
 }
 
 .portfolio-modal .modal-content h2 {
@@ -450,6 +461,7 @@ header.masthead {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     /* STYLES GO HERE */
+
     .Rectangle {
         background-image: linear-gradient(#00ccff, #0054a9);
         /* W3C */
@@ -484,6 +496,8 @@ header.masthead {
         left: 0%;
         right: 9%;
     }
+
+    
 }
 /* If the screen size is 600px wide or LESS, set the font-size of <div> to 30px */
 
@@ -534,6 +548,8 @@ header.masthead {
         padding: 0px;
     }
 }
+
+
 
 @media (min-width: 768px) {
     /* .seven-cols .col-md-1,
@@ -638,3 +654,60 @@ width: 1570px !important;
 .modal-body {
     font-family: DIN;
 }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+    .pd-5 {
+        padding: 0px 25px;
+    }
+    .pd_0_6 {
+        padding: 0px 10px;
+    }
+
+    .case-p {
+        font-size: 0.8rem;
+    }
+    .case-h3 {
+        font-family: DIN;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+    section h3.section-subheading {
+        /* font-family: DIN; */
+        font-size: 1.3rem !important;
+    }
+    .case-p {
+        font-size: 1.3rem;
+    }
+    .pd-5 {
+        padding: 0px 25px;
+    }
+ }
+
+ @media only screen 
+ and (min-width: 1024px) 
+ and (max-height: 1366px) 
+ and (-webkit-min-device-pixel-ratio: 1.5) {
+    .pd-5 {
+        padding: 0px 25px;
+    }
+    .pd_0_6 {
+        padding: 0px 10px;
+    }
+
+    .case-p {
+        font-size: 0.8rem;
+    }
+    .case-h3 {
+        font-family: DIN;
+        font-size: 1.2rem;
+    }
+     
+ }

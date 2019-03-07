@@ -1,5 +1,10 @@
 $(function() {
 
+  if (location.protocol != 'https:')
+  {
+  // location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+  }
+
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
     submitError: function($form, event, errors) {
