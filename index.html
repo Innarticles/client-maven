@@ -3,6 +3,13 @@
 
 <head>
 
+    <script>
+    if (location.protocol != 'https:')
+    {
+    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    }
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="MavenCode is a provider of Consulting services and Expertise for building and implementing large scale distributed reactive backend systems for processing massive large scale datasets.">
