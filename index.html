@@ -6,7 +6,7 @@
     <script>
     if (location.protocol != 'https:')
     {
-    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+    // location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
     }
     </script>
 
@@ -576,7 +576,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <span class="copyright">© 2019 Mavencode. All Rights Reserved  </span>
+                    <span class="copyright">© <span id="getcurrentyear"></span> Mavencode. All Rights Reserved  </span>
                 </div>
             </div>
         </div>

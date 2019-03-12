@@ -1,5 +1,8 @@
 $(function() {
 
+    var dt = new Date();
+    $("span#getcurrentyear").text(dt.getFullYear());
+
  
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
